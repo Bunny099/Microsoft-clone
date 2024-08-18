@@ -34,7 +34,23 @@ nav {
   padding-right: 18px;
   text-decoration: none;
 }
+@media screen and (max-width: 1115px) {
+  .leftnav .div {
+    display: none;
+  }
+}
 
+/* add something didnt work not center */
+@media screen and (max-width: 600px) {
+  .rightnav {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* All main content */
 
 /* new arrival section  */
@@ -83,6 +99,12 @@ nav {
   background-color: #005ca3;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1115px) {
+  .arrival-section {
+    display: none;
+  }
+}
 /* services  */
 .services div {
   margin-top: 50px;
@@ -100,6 +122,13 @@ nav {
 .card1 a {
   padding-top: 5px;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 777px) {
+  .services .div {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
 }
 /* xbox cards  */
 .xbox {
@@ -166,6 +195,27 @@ nav {
   padding: 5px;
   border: none;
 }
+
+@media (max-width: 1115px) {
+  .xbox-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 805px) {
+  .xbox-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .xbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* copilot section  */
 .copilot-section {
   margin: 20px 80px;
@@ -200,6 +250,12 @@ nav {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1450px) {
+  .copilot-section {
+    display: none;
+  }
+}
+
 /* business cards  */
 .busines {
   margin: 50px 60px;
@@ -215,6 +271,26 @@ nav {
   justify-content: center;
   column-gap: 25px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .business-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .busines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .business-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* social medisa follow up section */
 
@@ -250,6 +326,15 @@ nav {
   background-color: white;
   cursor: pointer;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (max-width: 805px) {
+  .social-left {
+    justify-content: center;
+  }
+  .social-right {
+    display: none;
+  }
 }
 /* footer section */
 .footer-main {
@@ -297,4 +382,25 @@ nav {
 .sec-sec a:hover {
   cursor: pointer;
   color: #3d3d3d;
+}
+
+@media (max-width: 950px) {
+  .footer-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1105px) {
+  .sec-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
